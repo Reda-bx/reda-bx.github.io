@@ -1,3 +1,113 @@
+@import 'https://fonts.googleapis.com/css?family=Rajdhani';
+
 body{
-  background: pink
+  padding: 0;
+  margin: 0;
+  line-height: 1.8em;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  word-wrap: break-word;
+  letter-spacing: .1em;
+}
+.header {
+  border-bottom: 1px solid #eee;
+}
+
+.footer, .header {
+  text-align: center;
+  padding: 30px 0;
+}
+.header, .footer, .wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+.container {
+  max-width: 660px;
+}
+.header, .footer, .container {
+  width: 100%;
+  margin: 0 auto;
+}
+.footer{
+  background: #eee;
+  margin-top: 50px;
+}
+h3{
+  font-size: 1.2em;
+  border-bottom: 1px solid;
+  display: inline-block;
+}
+a{
+  color: #003569;
+  font-weight: bold;
+}
+.less-line{
+  text-decoration: none
+}
+ul#projects li{
+  padding: 0;
+  font-size: .9em;
+  color: rgba(0,0,0,.5);
+  margin-bottom: 15px;
+  list-style: none;
+}
+ul#projects li::before{
+  content: '';
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  background-image: url('https://assets-cdn.github.com/images/icons/emoji/unicode/1f355.png');
+  background-size: 15px;
+  position: relative;
+  left: -15px;
+  top: 2px
+}
+#css-images{
+  position: relative;
+  margin-bottom: 35px;
+}
+#css-images a{
+  display: inline-block;
+  margin-right: 15px;
+}
+#css-images img{
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
+}
+.hide{
+  display: none;
+  font-size: .8em;
+  color: rgba(0,0,0,.9);
+  position: absolute;
+  top: 100%
+}
+.luffy:hover ~ .luffy-desc, .weather:hover ~ .weather-desc{
+  display: block;
+}
+.pictures{
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.picture-thumbnail{
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  margin: 10px;
+}
+.picture-thumbnail.one{
+  background-image: url('../images/1.jpg');
+}
+.picture-thumbnail.two{
+  background-image: url('../images/2.jpg')
+}
+.picture-thumbnail.three{
+  background-image: url('../images/3.jpg')
 }
