@@ -83,7 +83,7 @@ ul#projects li::before{
   position: absolute;
   top: 100%
 }
-.luffy:hover ~ .luffy-desc, .weather:hover ~ .weather-desc{
+.luffy:hover ~ .luffy-desc, .weather:hover ~ .weather-desc, .darth:hover ~ .darth-desc{
   display: block;
 }
 .pictures{
